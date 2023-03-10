@@ -1,0 +1,203 @@
+// $primary2: #be3455;
+// $primary3: #e5afbc;
+// $primary4: #81253e;
+// Color
+//primary text -
+
+//secondary -
+
+//absolut värde -> rem och px
+
+//danger
+// success
+
+//  Bootstrap
+// svar, vit går skala
+
+$body-color: #fefefe;
+$body-bg: #000000;
+
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import "bootstrap/scss/bootstrap.scss";
+
+$bg-dark: #000000; //Background
+
+$white: #fefefe;
+//Text och bakground
+
+$primary: #be3455;
+
+$dark: #1e1e1e;
+$dark2: #000000;
+$dark3: #2c2c2c;
+$dark4: #35363a;
+
+.card {
+    color: #fefefe;
+    background: $dark;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    h2 {
+        font-weight: 800;
+    }
+}
+
+.icon {
+    color: $primary;
+}
+
+.card {
+    background: $dark;
+}
+
+footer {
+    background: "#151515";
+
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+button {
+    background: $dark;
+    color: $primary;
+
+    border: none;
+    border-radius: 10px;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+}
+
+form {
+    background: $white;
+    color: $dark4;
+
+    .addComp {
+        background: $dark4;
+    }
+
+    .submitBtn {
+        background: $primary;
+        padding: 15px 36px;
+        color: $white;
+    }
+}
+
+.remove {
+    background-color: $body-bg;
+    color: $white;
+}
+
+.addbtn {
+    background: $primary;
+    color: $white;
+}
+
+.readMoreBtn {
+    background: $primary;
+    color: $white;
+}
+
+#teacherlist {
+    background: $dark;
+}
+
+// CSS Math Functions: Min(), Max(), Clamp()
+//https://ishadeed.com/article/spacing-in-css/
+
+footer .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+    footer .item.text {
+        margin-bottom: 0;
+    }
+}
+
+nav {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding: 1rem;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        padding: 1rem;
+        font-weight: 600;
+    }
+    .icon {
+        font-size: 1.4rem;
+    }
+}
+.hamburger {
+    display: none;
+    padding: 1rem;
+}
+@media screen and (max-width: 940px) {
+    .navbar {
+        .hamburger {
+            display: block;
+            z-index: 15;
+        }
+        .nav-menu {
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: -100%;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            transition: 0.5s ease-in;
+            color: #fefefe;
+        }
+        .active {
+            left: 0;
+        }
+        li {
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+
+        button {
+            font-size: 1.8rem;
+        }
+    }
+}

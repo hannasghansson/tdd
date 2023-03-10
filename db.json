@@ -1,0 +1,54 @@
+{
+  "courses": [
+    {
+      "id": 3147420603,
+      "title": "Course Titel",
+      "category": "Technology",
+      "startDate": "2023-03-02",
+      "endDate": "2025-03-02",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3165044978,
+      "title": "Course Titel",
+      "category": "Technology",
+      "startDate": "2023-03-02",
+      "endDate": "2024-03-02",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3165044979,
+      "title": "Course Titel",
+      "category": "Technology",
+      "startDate": "2023-03-02",
+      "endDate": "2024-03-02",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3165044979,
+      "category": "Technology",
+      "title": "Course Titel",
+      "startDate": "2023-03-02",
+      "endDate": "2024-03-02",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ],
+  "teachers": [
+    {
+      "id": 2800731453,
+      "firstName": "Ewe",
+      "lastName": "Haag",
+      "email": "ewe.haag@weducation.se",
+      "phone": "0735218989",
+      "competencies": ["competencies 1", "competencies 2", "competencies 3"]
+    },
+    {
+      "id": 2268440938,
+      "firstName": "Charlie",
+      "lastName": "Nelson",
+      "email": "charlie.nelson@weducation.se",
+      "phone": "0735218989",
+      "competencies": ["competencies 1", "competencies 2", "competencies 3"]
+    }
+  ]
+}
