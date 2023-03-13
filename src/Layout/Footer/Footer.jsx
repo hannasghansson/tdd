@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 className=" mb-4">Useful Links</h5>
+            <h5 className="text-uppercase  mb-4">Useful Links</h5>
             <ul className="list-unstyled">
               <li className="mb-3">
                 <Link to={"/"}>

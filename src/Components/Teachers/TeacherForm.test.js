@@ -1,13 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
 
 import TeacherForm from "./TeacherForm";
-//import { Provider } from "../Context/CourseContext";
-{
-  /* <Provider>
-<CourseForm />
-</Provider> */
-}
 
 describe("Teacher From Component", () => {
   const setup = () => render(<TeacherForm />);

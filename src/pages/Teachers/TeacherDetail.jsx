@@ -12,9 +12,9 @@ const TeacherDetail = () => {
   const teacher = getTeacherDetail(id);
 
   return (
-    <div>
+    <section>
       {teacher && (
-        <>
+        <div>
           <h2>
             {teacher?.firstName} {teacher?.lastName}
           </h2>
@@ -33,9 +33,9 @@ const TeacherDetail = () => {
             <FontAwesomeIcon icon={faBackward} className="me-2" /> Go back to
             teachers
           </Link>
-        </>
+        </div>
       )}
-    </div>
+    </section>
   );
 };
 
