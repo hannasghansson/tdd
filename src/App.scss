@@ -111,7 +111,6 @@ a {
 button {
     background-color: $dark-900;
     color: $white;
-    border: 1px solid $dark-900;
     padding: 13px;
     border-radius: 10px;
 }
@@ -136,6 +135,12 @@ button {
     padding: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    &:hover {
+        background-color: $primarydark;
+        border: $primarydark;
+        color: $primary;
+    }
 }
 
 .teacherList {
