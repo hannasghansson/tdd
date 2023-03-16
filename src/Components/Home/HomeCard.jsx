@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const homeCard = () => {
+const HomeCard = () => {
   return (
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="p-5 card">
+    <div className="container py-5">
+      <div className="row">
+        <div className="col-12 col-md-4">
+          <div className="p-5 card">
             <img
               src="https://ouch-cdn2.icons8.com/y2Q-eOENoTwkhthPLEhMInAGRs8t4d8DjV9EehWSoEI/rs:fit:256:330/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTYv/Y2RmMzRiOWYtN2Vj/NS00MWZkLTg3YzQt/MzRiYjlkZDVmY2I5/LnBuZw.png"
               alt=""
@@ -25,8 +25,8 @@ const homeCard = () => {
           </div>
         </div>
 
-        <div class="col-12 col-md-4 ">
-          <div class="p-5 card">
+        <div className="col-12 col-md-4 ">
+          <div className="p-5 card">
             <img
               src="https://ouch-cdn2.icons8.com/lIhSS3K6Ie9zYBtKWFqK_-Qe_3IXUiDazDBaPj0PB64/rs:fit:256:250/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjcy/LzBiYjNlY2UwLTcx/NWQtNDMxZC04MmU3/LTlhZmU5YjBjMDkz/Ny5wbmc.png"
               alt=""
@@ -48,8 +48,8 @@ const homeCard = () => {
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-4 ">
-          <div class="p-5 card">
+        <div className="col-12 col-md-4 ">
+          <div className="p-5 card">
             <img
               src="https://ouch-cdn2.icons8.com/tnS96P2bqW1VXP_QFtxmBf1ohsMM5kmRLoWbCxA-ZIE/rs:fit:256:280/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTc2/LzFmZmQ0Mjg2LTdl/NzItNDZmYS04YzM4/LTkyZDVmY2Q5NzA5/OC5wbmc.png"
               alt=""
@@ -73,4 +73,4 @@ const homeCard = () => {
   );
 };
 
-export default homeCard;
+export default HomeCard;
