@@ -14,61 +14,63 @@
 //  Bootstrap
 // svar, vit går skala
 
-$body-color: #fefefe;
-$body-bg: #000000;
+// $body-color: #fefefe;
+$body-color: #f3f8fa;
+$body-bg: #000;
 
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import "bootstrap/scss/bootstrap.scss";
 
-$bg-dark: #000000; //Background
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700,900");
 
-$white: #fefefe;
-//Text och bakground
+$dark-600: #39393d;
+$dark-700: #333333;
+$dark-800: #1c1c1d;
+$dark-900: #1e1e1e;
 
+$white: #f3f8fa;
 $primary: #be3455;
-
-$dark: #1e1e1e;
-$dark2: #000000;
-$dark3: #2c2c2c;
-$dark4: #35363a;
-
-.card {
-    color: #fefefe;
-    background: $dark;
-}
 
 body,
 html {
     margin: 0;
     padding: 0;
+    //font-family: "Muli", Arial, sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
 
-.heading {
-    h2 {
-        font-weight: 800;
+form {
+    input[type="text"],
+    input[type="category"],
+    input[type="date"],
+    input[type="description"] {
+        background: $dark-800;
+        border: $dark-800;
+        padding: 10px;
+        border-radius: 10px;
     }
+    input[type="description"] {
+        background: #1c1c1d;
+        border: #1c1c1d;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    label {
+        margin-bottom: 5px;
+    }
+}
+
+.card {
+    background: $dark-900;
 }
 
 .icon {
     color: $primary;
-}
-
-.card {
-    background: $dark;
-}
-
-footer {
-    background: "#151515";
-
-    h4 {
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
 }
 
 a {
@@ -77,69 +79,80 @@ a {
 
     &:hover {
         color: $primary;
+        border-color: $primary;
+    }
+}
+
+.btn-link {
+    background-color: $dark-900;
+    border: 1px solid $dark-900;
+    padding: 13px;
+    text-decoration: none;
+
+    .btn-link:hover {
+        border: $primary;
+        color: $white;
+    }
+
+    .link-icon-left {
+        margin-right: 10px;
     }
 }
 
 button {
-    background: $dark;
-    color: $primary;
-
-    border: none;
+    background-color: $dark-900;
+    color: $white;
+    border: 1px solid $dark-900;
+    padding: 13px;
     border-radius: 10px;
-    padding: 10px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
 }
 
-form {
-    background: $white;
-    color: $dark4;
+.addBtn {
+    background-color: $dark-900;
+    color: $white;
+    border: 1px solid $dark-900;
+    padding: 13px;
+    border-radius: 10px;
 
-    .addComp {
-        background: $dark4;
-    }
-
-    .submitBtn {
-        background: $primary;
-        padding: 15px 36px;
+    .addBtn:hover {
+        border: $primary;
         color: $white;
     }
 }
 
-.remove {
-    background-color: $body-bg;
+.submitBtn {
     color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+    padding: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.addbtn {
-    background: $primary;
-    color: $white;
-}
+// #teacherlist {
+//     background: $dark-700;
 
-.readMoreBtn {
-    background: $primary;
-    color: $white;
-}
+//     .span {
+//     }
 
-#teacherlist {
-    background: $dark;
+//     .teachers-Id-Link {
+
+//     .teachers-Id-Link:hover {
+//         border: 0.1em solid $primary;
+//         color: $white;
+//     }
+// }
+
+.teacherList {
+    background-color: $dark-900;
+
+    .line {
+        color: $primary;
+    }
 }
 
 // CSS Math Functions: Min(), Max(), Clamp()
 //https://ishadeed.com/article/spacing-in-css/
-
-footer .item.text {
-    margin-bottom: 36px;
-}
-
-@media (max-width: 767px) {
-    footer .item.text {
-        margin-bottom: 0;
-    }
-}
 
 nav {
     .container {
@@ -160,9 +173,17 @@ nav {
     li {
         padding: 1rem;
         font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:hover {
+            color: $primary;
+        }
     }
     .icon {
         font-size: 1.4rem;
+        &:hover {
+            color: $white;
+        }
     }
 }
 .hamburger {
@@ -186,7 +207,7 @@ nav {
             justify-content: center;
             background: rgba(0, 0, 0, 0.8);
             transition: 0.5s ease-in;
-            color: #fefefe;
+            color: $white;
         }
         .active {
             left: 0;

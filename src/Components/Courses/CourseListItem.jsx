@@ -53,6 +53,7 @@ function CourseList({ course }) {
           Explore Course
           <FontAwesomeIcon icon={faChevronRight} className="icon ms-3" />
         </Link>
+
       </div>
     </li>
   );

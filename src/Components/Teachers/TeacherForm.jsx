@@ -76,22 +76,26 @@ function TeacherForm() {
       onSubmit={submitForm}
       className="col-12 col-md-8 offset-md-2  mb-4 p-5 rounded"
     >
-      <h2>Form</h2>
-      <p className="text-muted">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        repellendus, nobis mollitia alias a commodi.
-      </p>
+      <div className="mb-5">
+        <span>Teachter</span>
+        <h2>Form</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          repellendus, nobis mollitia alias a commodi.
+        </p>
+      </div>
+
       <div className="row">
         <div className="col-12 col-md-6 mb-3">
           <label htmlFor="firstName">First name</label>
           <input
             id="firstName"
             className="form-control"
-            style={{ background: "#f2f2f2" }}
             type="text"
             name="firstName"
             onChange={handleChange}
             ref={inputRef}
+            required
           />
         </div>
 
@@ -100,10 +104,10 @@ function TeacherForm() {
           <input
             id="lastName"
             className="form-control"
-            style={{ background: "#f2f2f2" }}
             type="text"
             name="lastName"
             onChange={handleChange}
+            required
           />
         </div>
       </div>
@@ -113,22 +117,22 @@ function TeacherForm() {
         <input
           id="email"
           className="form-control"
-          style={{ background: "#f2f2f2" }}
           type="text"
           name="email"
           onChange={handleChange}
+          required
         />
       </div>
 
-      <div className="mb-3">
+      <div className="mb-4">
         <label htmlFor="phone">Phone</label>
         <input
           id="phone"
           className="form-control"
-          style={{ background: "#f2f2f2" }}
           type="text"
           name="phone"
           onChange={handleChange}
+          required
         />
       </div>
 
@@ -136,12 +140,14 @@ function TeacherForm() {
         <div className="pb-5">
           {formData.competencies.map((competence, i) => (
             <div key={i} className="mb-3">
-              <h6>Competence</h6>
+              <label htmlFor="competence">Competence</label>
+
               <div className="d-flex justify-space-between ">
                 <input
+                  id="competence"
                   className="form-control"
-                  style={{ background: "#f2f2f2" }}
                   type="text"
+                  name="competence"
                   value={competence}
                   onChange={(e) => changeCompetence(i, e.target.value)}
                 />
@@ -161,24 +167,22 @@ function TeacherForm() {
             </div>
           ))}
 
-          <button onClick={addCompetence} className="">
-            <FontAwesomeIcon icon={faPlus} />
-            <span className="mx-4">Add competence</span>
+          <button onClick={addCompetence} className="addBtn">
+            <FontAwesomeIcon icon={faPlus} className="icon me-2" />
+            <span>Add competence</span>
           </button>
         </div>
       )}
       {!hasCompetencies && (
-        // <>
         <div className="pb-5">
-          <button onClick={addCompetence} className="addComp">
-            <FontAwesomeIcon icon={faPlus} className="me-2" size="xs" />
-            <span>Add competence</span>
+          <button onClick={addCompetence} className="addBtn">
+            <FontAwesomeIcon icon={faPlus} className="icon me-2" />
+            <span>Add new competence</span>
           </button>
         </div>
-        // </>
       )}
 
-      <hr />
+      <hr className="mb-5" />
 
       <div className="d-grid ">
         <PortalModal
@@ -189,8 +193,8 @@ function TeacherForm() {
           buttonText="OK"
         />
 
-        <button type="submit" className="submitBtn">
-          Add new teacher
+        <button type="submit" className="submitBtn fw-bold">
+          Submit
         </button>
       </div>
     </form>

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import userEvent from "@testing-library/user-event";
 
 import CourseForm from "./CourseForm";
 
@@ -26,7 +26,7 @@ describe("Course From Component", () => {
     // Arrange...
     render(<CourseForm />);
     const submit = screen.getByRole("button", {
-      name: /Add new course/i,
+      name: /Submit/i,
     });
     expect(submit).toBeInTheDocument();
   });

@@ -29,7 +29,7 @@ describe("Teacher From Component", () => {
   test("Have register button", () => {
     render(<TeacherForm />);
     const submit = screen.getByRole("button", {
-      name: /Add new teacher/i,
+      name: /Submit/i,
     });
     expect(submit).toBeInTheDocument();
   });

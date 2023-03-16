@@ -28,12 +28,14 @@ const AddCourse = () => {
             qui. Non ab sequi officiis aut amet sit accusantium ea possimus
             deleniti!
           </p>
-          <div>
-            <button className="addbtn">
-              <Link to={"/addCourse"}>
-                <FontAwesomeIcon icon={faPlus} className="me-2" /> Add Course
-              </Link>
-            </button>
+
+          <div className="btn-link col-12 col-md-6">
+            <Link to={"/addCourse"}>
+              <span className="link-icon-left">
+                <FontAwesomeIcon icon={faPlus} className="icon" />
+              </span>
+              Add new course
+            </Link>
           </div>
         </div>
       </div>

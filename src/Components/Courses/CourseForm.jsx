@@ -64,80 +64,181 @@ const CourseForm = () => {
   }, [inputRef]);
 
   return (
+    // <form
+    //   onSubmit={submitForm}
+    //   className="col-12 col-md-8 offset-md-2 mb-5 p-5 rounded"
+    //   style={{ background: "#fefefe", color: "#010307" }}
+    // >
+    //   <h2>Form</h2>
+    //   <p className="text-muted">
+    //     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+    //     repellendus, nobis mollitia alias a commodi.
+    //   </p>
+    //   <div className="col-12 mb-3">
+    //     <label htmlFor="title">Title</label>
+    //     <input
+    //       id="title"
+    //       className="form-control"
+    //       type="text"
+    //       name="title"
+    //       onChange={handleChange}
+    //       ref={inputRef}
+    //       style={{ background: "#f2f2f2", color: "#1e1e1e" }}
+    //       required
+    //     />
+    //   </div>
+
+    //   <div className="col-12 mb-3">
+    //     <label htmlFor="category">Category</label>
+    //     <input
+    //       id="category"
+    //       className="form-control"
+    //       type="text"
+    //       name="category"
+    //       onChange={handleChange}
+    //       style={{ background: "#f2f2f2", color: "#1e1e1e" }}
+    //       required
+    //     />
+    //   </div>
+    //   <div className="row">
+    //     <div className="col-12 col-md-6 mb-3">
+    //       <label htmlFor="startDate">Course Start Date</label>
+    //       <input
+    //         id="startDate"
+    //         className="form-control"
+    //         type="date"
+    //         min={formatYYYYMMDD(new Date())}
+    //         name="startDate"
+    //         onChange={handleChange}
+    //         style={{ background: "#f2f2f2", color: "#1e1e1e" }}
+    //         required
+    //       />
+    //     </div>
+
+    //     <div className="col-12 col-md-6 mb-3">
+    //       <label htmlFor="endDate">Course End Date</label>
+    //       <input
+    //         id="endDate"
+    //         className="form-control"
+    //         min={formatYYYYMMDD(getMinEndDate())}
+    //         type="date"
+    //         name="endDate"
+    //         onChange={handleChange}
+    //         style={{ background: "#f2f2f2", color: "#1e1e1e" }}
+    //         required
+    //       />
+    //     </div>
+    //   </div>
+    //   <div className="col-12 pb-5">
+    //     <label htmlFor="">Description</label>
+    //     <textarea
+    //       id="description"
+    //       className="form-control"
+    //       type="text"
+    //       name="description"
+    //       onChange={handleChange}
+    //       style={{ background: "#f2f2f2", color: "#1e1e1e" }}
+    //       required
+    //     />
+    //   </div>
+
+    //   <hr />
+
+    //   <div className="d-grid">
+    //     <PortalModal
+    //       isOpen={isOpen}
+    //       onClose={handleModalClose}
+    //       title="Wohoo!"
+    //       message="You have added a new course to W. Education. ✨"
+    //       buttonText="OK"
+    //     />
+
+    //     <button type="submit" className="submitBtn">
+    //       Add new course
+    //     </button>
+    //   </div>
+    // </form>
+
     <form
       onSubmit={submitForm}
-      className="col-12 col-md-8 offset-md-2 mb-5 p-5 rounded"
-      style={{ background: "#fefefe", color: "#010307" }}
+      className="col-12 col-md-8 offset-md-2 mb-4 p-5"
     >
-      <h2>Form</h2>
-      <p className="text-muted">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        repellendus, nobis mollitia alias a commodi.
-      </p>
-      <div className="col-12 mb-3">
-        <label htmlFor="title">Title</label>
-        <input
-          id="title"
-          className="form-control"
-          type="text"
-          name="title"
-          onChange={handleChange}
-          ref={inputRef}
-          style={{ background: "#f2f2f2" }}
-        />
+      <div className="mb-5">
+        <span>Course</span>
+        <h2>Form</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          repellendus, nobis mollitia alias a commodi.
+        </p>
       </div>
 
-      <div className="col-12 mb-3">
-        <label htmlFor="category">Category</label>
-        <input
-          id="category"
-          className="form-control"
-          type="text"
-          name="category"
-          onChange={handleChange}
-          style={{ background: "#f2f2f2" }}
-        />
-      </div>
       <div className="row">
         <div className="col-12 col-md-6 mb-3">
-          <label htmlFor="startDate">Course Start Date</label>
+          <label htmlFor="title">Title</label>
           <input
-            id="startDate"
+            id="title"
             className="form-control"
-            type="date"
-            min={formatYYYYMMDD(new Date())}
-            name="startDate"
+            type="text"
+            name="title"
             onChange={handleChange}
-            style={{ background: "#f2f2f2" }}
+            ref={inputRef}
+            required
           />
         </div>
 
         <div className="col-12 col-md-6 mb-3">
-          <label htmlFor="endDate">Course End Date</label>
+          <label htmlFor="category">Category</label>
           <input
-            id="endDate"
+            id="category"
             className="form-control"
-            min={formatYYYYMMDD(getMinEndDate())}
-            type="date"
-            name="endDate"
+            type="category"
+            name="category"
             onChange={handleChange}
-            style={{ background: "#f2f2f2" }}
+            required
           />
         </div>
       </div>
-      <div className="col-12 pb-5">
-        <label htmlFor="">Description</label>
+
+      <div className="mb-3">
+        <label htmlFor="startDate">Course Start Date</label>
+        <input
+          id="startDate"
+          className="form-control"
+          type="date"
+          min={formatYYYYMMDD(new Date())}
+          name="startDate"
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+      <div className="mb-3">
+        <label htmlFor="endDate">Course End Date</label>
+        <input
+          id="endDate"
+          className="form-control"
+          min={formatYYYYMMDD(getMinEndDate())}
+          type="date"
+          name="endDate"
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+      <div className="pb-5">
+        <label htmlFor="description">Description</label>
         <textarea
           id="description"
           className="form-control"
-          type="text"
+          style={{ background: "#1c1c1d", color: "#f3f8fa", border: "#1c1c1d" }}
+          type="description"
           name="description"
           onChange={handleChange}
-          style={{ background: "#f2f2f2" }}
+          required
         />
       </div>
 
-      <hr />
+      <hr className="mb-5" />
 
       <div className="d-grid">
         <PortalModal
@@ -148,8 +249,8 @@ const CourseForm = () => {
           buttonText="OK"
         />
 
-        <button type="submit" className="submitBtn">
-          Add new course
+        <button type="submit" className="submitBtn fw-bold">
+          Submit
         </button>
       </div>
     </form>

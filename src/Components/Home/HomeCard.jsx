@@ -19,11 +19,9 @@ const homeCard = () => {
             />
             <h2>Heading</h2>
             <p>Lorem, ipsum dolor sit amet adipisicing elit.</p>
-            <button className="btn btn-dark text-">
-              <Link to={"/"} className="link-unstyled">
-                View details
-              </Link>
-            </button>
+            <Link to={"/*"} className="btn-link">
+              View details
+            </Link>
           </div>
         </div>
 

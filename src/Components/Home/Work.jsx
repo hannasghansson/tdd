@@ -9,22 +9,19 @@ const Work = () => {
       </div>
       <ul className="row g-5 list-unstyled">
         <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
+          <div className="p-5 card">
+            <h5>Lorem Ipsum</h5>
+          </div>
         </li>
         <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
+          <div className="p-5 card">
+            <h5>Dolor sit amet</h5>
+          </div>
         </li>
         <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
-        </li>
-        <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
-        </li>
-        <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
-        </li>
-        <li className="col-12 col-md-4">
-          <div className="p-5 card"></div>
+          <div className="p-5 card">
+            <h5>Adipisicing</h5>
+          </div>
         </li>
       </ul>
     </div>
