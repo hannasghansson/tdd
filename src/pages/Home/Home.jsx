@@ -36,8 +36,10 @@ const home = ({ data }) => {
 
       <HomeCard />
       <Values />
-      <Sandbox />
+
       <Work />
+
+      <Sandbox />
     </div>
   );
 };

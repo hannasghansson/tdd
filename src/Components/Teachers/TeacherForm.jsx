@@ -74,7 +74,8 @@ function TeacherForm() {
   return (
     <form
       onSubmit={submitForm}
-      className="col-12 col-md-8 offset-md-2  mb-4 p-5 rounded"
+      className="col-12 col-md-7"
+      style={{ margin: "0 auto" }}
     >
       <div className="mb-5">
         <span>Teachter</span>

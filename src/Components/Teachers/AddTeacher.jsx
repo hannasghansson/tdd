@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const AddTeacher = () => {
   return (
@@ -34,7 +34,7 @@ const AddTeacher = () => {
               <span className="link-icon-left">
                 <FontAwesomeIcon icon={faPlus} className="icon" />
               </span>
-              Add new teacher
+              <span className="link-text">Add new teacher</span>
             </Link>
           </div>
         </div>

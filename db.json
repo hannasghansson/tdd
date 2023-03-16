@@ -40,7 +40,7 @@
       "lastName": "Haag",
       "email": "ewe.haag@weducation.se",
       "phone": "0735218989",
-      "competencies": ["competencies 1", "competencies 2", "competencies 3"]
+      "competencies": ["Java", "Python", "Ruby", "JavaScript"]
     },
     {
       "id": 2268440938,
@@ -48,7 +48,7 @@
       "lastName": "Nelson",
       "email": "charlie.nelson@weducation.se",
       "phone": "0735218989",
-      "competencies": ["competencies 1", "competencies 2", "competencies 3"]
+      "competencies": ["JavaScript", "Html", "Css"]
     }
   ]
 }

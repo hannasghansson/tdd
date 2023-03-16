@@ -2,7 +2,7 @@ import React from "react";
 
 const Work = () => {
   return (
-    <div className="py-5">
+    <div className="container py-5">
       <div className="mb-5">
         <h2>How it works</h2>
         <p className="">Lorem, ipsum dolor sit amet adipisicing elit.</p>

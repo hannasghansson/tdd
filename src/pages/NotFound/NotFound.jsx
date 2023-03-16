@@ -3,32 +3,23 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <section
-      className="py-5"
-      // style={{
-      //   backgroundImage: "url(https://bootdey.com/img/Content/bg1.jpg)",
-      // }}
-    >
-      <div className="d-flex align-items-center justify-content-center py-5">
-        <div className="border my-5 p-5">
-          <div className="text-center">
+    <section id="errorPage" className="container py-5">
+      <div className="col-12 col-md-6" style={{ margin: "0 auto" }}>
+        <div className="text-center pb-5">
+          <img
+            src="https://ouch-cdn2.icons8.com/UPKGYdD7V5lClu3f_kEKh8KQ4SE1rIaOnUpLtiOt-zo/rs:fit:256:237/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjE2/LzBjYjhlNTBlLWY1/NDQtNDUwYy1hNDVm/LTIyNjA0Yjc1MDEy/My5wbmc.png"
+            alt="error images"
+            className="mb-5"
+          />
+          <div className="card p-4 my-5">
             <span className="">Whoops!</span>
             <h1 className="display-1 fw-bold">404 Error</h1>
-
-            <p className="mb-5">The page you’re looking for doesn’t exist.</p>
-
-            <button
-              className="btn btn-dark"
-              style={{
-                padding: "7px 15px 7px 15px",
-                borderRadius: "1.5rem",
-                backgroundImage:
-                  "linear-gradient(to right,#04ac9c,#46dc9e,#46dc9e,#04ac9c)",
-              }}
-            >
-              <Link to={"/"}>Return Home</Link>
-            </button>
+            <p>The page you’re looking for doesn’t exist.</p>
           </div>
+
+          <button id="error-btn" className="fw-bold w-100 mb-5">
+            <Link to={"/"}>Return Home</Link>
+          </button>
         </div>
       </div>
     </section>

@@ -26,13 +26,15 @@ function TeachersListItem({ teacher }) {
         </p>
       </div>
 
-      <span className="col-auto d-flex align-items-center">
-        {/* <span className="teachers-Id-Link col-auto d-flex align-items-center"> */}
-        <Link to={`/teachers/${teacher.id}`}>
-          Read More
-          <FontAwesomeIcon icon={faChevronRight} className="icon ms-3" />
-        </Link>
-      </span>
+      <Link
+        to={`/teachers/${teacher.id}`}
+        className="col-auto d-flex align-items-center"
+      >
+        <span className="link-text fw-bold">Read More</span>
+        <span className="link-icon-right">
+          <FontAwesomeIcon icon={faChevronRight} className="icon" />
+        </span>
+      </Link>
     </li>
   );
 }

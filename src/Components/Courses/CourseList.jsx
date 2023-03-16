@@ -15,7 +15,7 @@ function CourseList() {
 
   return (
     <article className="container p-5 ">
-      <h1 className="visually-hidden">Courses List</h1>
+      <h1 className="visually-hidden">Courses list page</h1>
 
       <Heading span="Westcoast Education" heading="Our Courses" />
 

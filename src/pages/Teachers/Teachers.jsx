@@ -8,6 +8,8 @@ import AddTeacher from "../../Components/Teachers/AddTeacher";
 const Teachers = () => {
   return (
     <main className="container pb-5">
+      <h1 className="visually-hidden">Teacher Page</h1>
+
       <Hero
         heading="Teachers"
         text="Lorem ipsum

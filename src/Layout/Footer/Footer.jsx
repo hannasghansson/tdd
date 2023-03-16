@@ -20,7 +20,9 @@ const Footer = () => {
     <footer className="text-center text-lg-start pt-4">
       <div className="container py-4">
         <div className="row">
-          <div className=" col-lg-4 col-md-12 mb-5 mb-md-0" id="text-item">
+          {/* <div className=" col-lg-4 col-md-12 mb-5 mb-md-0"> */}
+
+          <div className="col-12 col-md-4 mb-5 mb-md-0">
             <h4
               className="text-uppercase mb-4"
               style={{ letterSpacing: "3px" }}
@@ -35,56 +37,34 @@ const Footer = () => {
               beatae autem sint sed vero eaque pariatur ad odit est.
             </p>
             <div className="social">
-              <Link to={"/*"} className="faFb mx-4">
+              {/* <Link to={"/*"} className="faFb me-4">
+                <FontAwesomeIcon icon={faFacebook} className="icon" size="lg" />
+              </Link> */}
+              <Link to={"/*"}>
                 <FontAwesomeIcon icon={faFacebook} className="icon" size="lg" />
               </Link>
-              <Link to={"/*"} className="faIg mx-4">
+
+              <Link to={"/*"}>
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="icon"
                   size="lg"
                 />
               </Link>
-              <Link to={"/*"} className="faTw mx-4">
+              <Link to={"/*"}>
                 <FontAwesomeIcon icon={faTwitter} className="icon" size="lg" />
               </Link>
-              <Link to={"/*"} className="faGo mx-4">
+              <Link to={"/*"}>
                 <FontAwesomeIcon icon={faGoogle} className="icon" size="lg" />
               </Link>
             </div>
           </div>
 
-          {/* <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 className="text-uppercase mb-4">Contact</h5>
-
-            <ul className="fa-ul">
-              <li className="mb-3">
-                <p>
-                  <FontAwesomeIcon icon={faLocationDot} className="icon me-2" />{" "}
-                  Stockholm, Sverige
-                </p>
-              </li>
-              <li className="mb-3">
-                <span className="fa-li">
-                  <FontAwesomeIcon icon={faLocationDot} className="icon" />
-                </span>
-                <p className="ms-2">Stockholm, Sverige</p>
-              </li>
-              <li className="mb-3">
-                <span className="fa-li">
-                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                </span>
-                <p className="ms-2">info@example.com</p>
-              </li>
-              <li className="mb-3">
-                <span className="fa-li">
-                  <FontAwesomeIcon icon={faPhone} className="icon" />
-                </span>
-                <p className="ms-2">+ 46 123 456 78</p>
-              </li>
-            </ul>
-          </div> */}
-          <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
+          {/* <div className="col-lg-3 col-md-6 mb-4 mb-md-0"> */}
+          <div
+            className="col-12 col-md-3 mb-4 mb-md-0"
+            style={{ margin: "0 auto" }}
+          >
             <h5 className="text-uppercase mb-4">Contact</h5>
             <ul className="list-unstyled">
               <li className="mb-3">
@@ -116,8 +96,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          {/* 
+          <div className="col-lg-3 col-md-6 mb-4 mb-md-0"> */}
 
-          <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div className="col-12 col-md-3 mb-4 mb-md-0">
             <h5 className="text-uppercase  mb-4">Useful Links</h5>
             <ul className="list-unstyled">
               <li className="mb-3">

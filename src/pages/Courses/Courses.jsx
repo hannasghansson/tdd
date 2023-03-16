@@ -8,6 +8,7 @@ import AddCourse from "../../Components/Courses/AddCourse";
 const Courses = () => {
   return (
     <main>
+      <h1 className="visually-hidden">Courses Page</h1>
       <Hero
         heading="Courses"
         text="Lorem ipsum
