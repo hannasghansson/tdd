@@ -13,6 +13,8 @@ $primarydark: rgba(190, 52, 85, 0.2);
 $secondary: #3a82f7;
 $secondaryDark: rgba(58, 130, 247, 0.2);
 
+@import "bootstrap/scss/bootstrap";
+
 body,
 html {
     margin: 0;
@@ -25,13 +27,18 @@ html {
 
 form {
     input[type="text"],
-    input[type="category"],
+    input[type="text"],
     input[type="date"],
-    input[type="description"] {
+    textarea[type="text"] {
         background-color: $dark-900;
         border: $dark-900;
         padding: 10px;
         border-radius: 10px;
+        &:focus,
+        &:active,
+        &:focus-within {
+            background-color: $dark-900;
+        }
     }
     input[type="description"] {
         background: #1c1c1d;

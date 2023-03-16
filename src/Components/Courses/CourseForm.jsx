@@ -97,7 +97,7 @@ const CourseForm = () => {
           <input
             id="category"
             className="form-control"
-            type="category"
+            type="text"
             name="category"
             onChange={handleChange}
             required
@@ -136,8 +136,7 @@ const CourseForm = () => {
         <textarea
           id="description"
           className="form-control"
-          style={{ background: "#1c1c1d", color: "#f3f8fa", border: "#1c1c1d" }}
-          type="description"
+          type="text"
           name="description"
           onChange={handleChange}
           required
